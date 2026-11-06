@@ -1,8 +1,25 @@
+import Button from "@/components/ui/button";
+import Section from "@/components/ui/section";
+import SectionHeading from "@/components/ui/section-heading";
 import { cn } from "@/lib/utils";
 import React from "react";
 
 export default function UiText() {
-  const projects = ["NoteAI", "Portfolio Website", "Other Projects"];
+  //   const projects = ["NoteAI", "Portfolio Website", "Other Projects"];
+  const projects = [
+    {
+      name: "NoteAI",
+      description: "An AI-powered note-taking workspace.",
+    },
+    {
+      name: "Portfolio",
+      description: "A personal portfolio built with Next.js.",
+    },
+    {
+      name: "Other Projects",
+      description: "More experiments and development work.",
+    },
+  ];
   const isActive = true;
   return (
     <main>
@@ -37,7 +54,7 @@ export default function UiText() {
             Frontend Developer
           </p>
 
-          <h1 className="text-[length:var(--text-display)] font-semibold leading-[1.05] tracking-tight">
+          <h1 className="text-(length:--text-display) font-semibold leading-[1.05] tracking-tight">
             Building thoughtful digital experiences.
           </h1>
 
@@ -81,10 +98,10 @@ export default function UiText() {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                 <article
-                  key={project}
+                  key={project.name}
                   className="rounded-xl border border-border bg-surface p-6"
                 >
-                  <h2 className="text-xl font-semibold">{project}</h2>
+                  <h2 className="text-xl font-semibold">{project.name}</h2>
 
                   <p className="mt-3 text-sm text-foreground-secondary">
                     A project built with modern web technologies.
@@ -113,6 +130,44 @@ export default function UiText() {
         <div className={cn("px-4 py-2", "px-8")}>
           <p>Tailwind conflicts are resolved.</p>
         </div>
+      </article>
+
+      <article>
+        <Section>
+          <SectionHeading
+            eyebrow="01 — Selected Work"
+            title="Projects I've built."
+            description="A collection of projects showcasing my approach to building modern web applications."
+          />
+
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project) => (
+              <article
+                key={project.name}
+                className="rounded-xl border border-border bg-surface p-6"
+              >
+                <h3 className="text-xl font-semibold">{project.name}</h3>
+
+                <p className="mt-3 text-sm text-foreground-secondary">
+                  {project.description}
+                </p>
+
+                <Button variant="outline" size="sm" className="mt-5">
+                  View project
+                </Button>
+              </article>
+            ))}
+          </div>
+        </Section>
+
+        <Section>
+          <SectionHeading
+            eyebrow="02 — About Me"
+            title="A little about how I work."
+            description="I enjoy turning complex ideas into simple, thoughtful digital experiences."
+            align="center"
+          />
+        </Section>
       </article>
     </main>
   );
