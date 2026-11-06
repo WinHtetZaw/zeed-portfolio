@@ -66,6 +66,24 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   --shadow-card: var(--shadow-card);
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Typography scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Heading sizes */
+  --text-display: clamp(3rem, 7vw, 5rem);
+  --text-heading: clamp(2rem, 4vw, 3rem);
 }
 
 /* ========================================
@@ -81,6 +99,7 @@ html {
 }
 
 body {
+  font-family: var(--font-geist-sans);
   min-height: 100svh;
   margin: 0;
   background: var(--background);
