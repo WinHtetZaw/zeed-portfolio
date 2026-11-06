@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
@@ -17,15 +16,26 @@ export default function SiteHeader() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   function closeMenu() {
     setIsMenuOpen(false);
   }
 
   function isActiveRoute(href: string) {
-    return (
-      pathname === href ||
-      pathname.startsWith(`${href}/`)
-    );
+    return pathname === href || pathname.startsWith(`${href}/`);
   }
 
   return (
@@ -58,7 +68,7 @@ export default function SiteHeader() {
                   "text-sm font-medium transition-colors duration-200",
                   isActive
                     ? "text-foreground"
-                    : "text-foreground-secondary hover:text-foreground"
+                    : "text-foreground-secondary hover:text-foreground",
                 )}
               >
                 {item.label}
@@ -80,16 +90,14 @@ export default function SiteHeader() {
         <button
           type="button"
           onClick={() => setIsMenuOpen((open) => !open)}
-          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
           className="inline-flex size-10 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-surface md:hidden"
         >
-          {isMenuOpen ? (
-            <X size={22} />
-          ) : (
-            <Menu size={22} />
-          )}
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
@@ -114,7 +122,7 @@ export default function SiteHeader() {
                     "text-base font-medium transition-colors",
                     isActive
                       ? "text-accent"
-                      : "text-foreground-secondary hover:text-foreground"
+                      : "text-foreground-secondary hover:text-foreground",
                   )}
                 >
                   {item.label}
