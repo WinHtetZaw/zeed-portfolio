@@ -15,15 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Zeed.dev — Frontend Developer",
-    template: "%s | Zeed.dev",
-  },
+  title: "Zeed.dev | Frontend Developer",
   description:
     "I'm Zeed, a frontend developer focused on React, Next.js, and building modern web applications.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
