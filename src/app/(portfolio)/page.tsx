@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background p-8 text-foreground">
+    <article className="min-h-screen bg-background p-8 text-foreground">
       <div className="mx-auto max-w-3xl space-y-6">
         <h1 className="text-4xl font-bold">Zeed.dev</h1>
 
@@ -19,6 +19,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-    </main>
+    </article>
   );
 }
