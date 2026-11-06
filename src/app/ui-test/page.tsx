@@ -1,8 +1,11 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
 export default function UiText() {
+  const projects = ["NoteAI", "Portfolio Website", "Other Projects"];
+  const isActive = true;
   return (
-    <div>
+    <main>
       <article className="min-h-screen bg-background p-8 text-foreground">
         <div className="mx-auto max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold">Zeed.dev</h1>
@@ -57,6 +60,60 @@ export default function UiText() {
           </p>
         </section>
       </article>
-    </div>
+
+      <article>
+        <section className="section-spacing">
+          <div className="container-layout space-y-8">
+            <div className="space-y-4">
+              <p className="font-mono text-sm text-accent">
+                FRONTEND DEVELOPER
+              </p>
+
+              <h1 className="text-[length:var(--text-display)] font-semibold tracking-tight">
+                Building thoughtful digital experiences.
+              </h1>
+
+              <p className="max-w-2xl text-lg leading-relaxed text-foreground-secondary">
+                Focused on React, Next.js, and modern web applications.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {projects.map((project) => (
+                <article
+                  key={project}
+                  className="rounded-xl border border-border bg-surface p-6"
+                >
+                  <h2 className="text-xl font-semibold">{project}</h2>
+
+                  <p className="mt-3 text-sm text-foreground-secondary">
+                    A project built with modern web technologies.
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article className="container-layout section-spacing space-y-8">
+        <h1 className="text-4xl font-semibold">Testing cn()</h1>
+
+        <div
+          className={cn(
+            "rounded-xl border border-border bg-surface p-6",
+            isActive && "border-accent",
+          )}
+        >
+          <p className="text-foreground-secondary">
+            Conditional classes are working.
+          </p>
+        </div>
+
+        <div className={cn("px-4 py-2", "px-8")}>
+          <p>Tailwind conflicts are resolved.</p>
+        </div>
+      </article>
+    </main>
   );
 }
