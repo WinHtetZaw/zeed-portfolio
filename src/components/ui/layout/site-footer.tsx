@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { CURRENT_YEAR } from "@/app/utils/constants";
+import { CURRENT_YEAR } from "@/utils/constants";
 
 const navigationLinks = [
   { label: "Home", href: "/" },

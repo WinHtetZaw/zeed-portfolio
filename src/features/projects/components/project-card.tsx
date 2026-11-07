@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 import { Project } from "@/features/projects/data/projects";
-import { GitHub } from "./github-icon";
+import { GitHub } from "../../../components/ui/github-icon";
 
 type ProjectCardProps = {
   project: Project;

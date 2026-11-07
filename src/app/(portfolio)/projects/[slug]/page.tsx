@@ -7,7 +7,7 @@ import { CaseStudyContent } from "@/features/projects/components/case-study-cont
 import Link from "next/link";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import CaseStudyNavigation from "@/features/projects/components/case-study-navigation";
-import { GitHub } from "@/features/projects/components/github-icon";
+import { GitHub } from "@/components/ui/github-icon";
 import { ProjectImage } from "@/features/projects/components/project-image";
 import { ProjectGallery } from "@/features/projects/components/project-gallery";
 import { projectImages } from "@/features/projects/data/project-images";

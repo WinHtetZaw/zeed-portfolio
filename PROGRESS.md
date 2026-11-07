@@ -51,3 +51,17 @@ Initialize the Next.js application and verify the development environment.
 ## Notes
 
 Update this file whenever a milestone is completed or an important technical decision changes.
+
+---
+
+## Important production improvements
+
+This implementation is a good starting point, but it isn't fully production-hardened yet.
+
+Before publishing, we should add:
+
+- Rate limiting: prevent repeated submissions from the same IP.
+- Stronger spam protection: consider Cloudflare Turnstile.
+- Request monitoring: track failed email deliveries without logging sensitive message contents.
+- Deployment configuration: configure and verify the sending domain and environment variables.
+  The honeypot alone is not sufficient protection against automated spam.
