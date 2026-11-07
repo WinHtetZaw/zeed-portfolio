@@ -15,9 +15,7 @@ import ProjectNavigation from "@/features/projects/components/project-navigation
 import { Metadata } from "next";
 
 type ProjectPageProps = {
-  params: Promise<{
-    slug: string;
-  }>;
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
@@ -40,12 +38,26 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${project.title} | Projects`,
+    title: project.title,
     description: project.description,
+
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
+
     openGraph: {
-      title: `${project.title} | Zeed.dev`,
+      title: `${project.title} | WinHtetZaw.dev`,
       description: project.description,
       type: "article",
+      images: project.image.src
+        ? [{ url: project.image.src, alt: project.image.alt }]
+        : [],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | WinHtetZaw.dev`,
+      description: project.description,
       images: project.image.src ? [project.image.src] : [],
     },
   };

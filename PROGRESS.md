@@ -65,3 +65,5 @@ Before publishing, we should add:
 - Request monitoring: track failed email deliveries without logging sensitive message contents.
 - Deployment configuration: configure and verify the sending domain and environment variables.
   The honeypot alone is not sufficient protection against automated spam.
+
+\*\* After deployment, register your domain with Google Search Console and submit your sitemap.

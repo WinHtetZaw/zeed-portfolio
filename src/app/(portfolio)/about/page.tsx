@@ -8,7 +8,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about my journey as a frontend developer, the technologies I work with, and my approach to building web applications.",
+    "Learn about Win Htet Zaw's web development journey, technical skills, and approach to building modern web applications.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

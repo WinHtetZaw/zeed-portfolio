@@ -47,9 +47,9 @@ export default function SiteHeader() {
           href="/"
           onClick={closeMenu}
           className="text-xl font-semibold tracking-tight text-foreground"
-          aria-label="Zeed.dev home"
+          aria-label="WinHtetZaw.dev home"
         >
-          Zeed<span className="text-accent">.</span>dev
+          WinHtetZaw<span className="text-accent">.</span>dev
         </Link>
 
         {/* Desktop Navigation */}
