@@ -1,4 +1,5 @@
 import AboutPreview from "@/features/home/components/about-preview";
+import { ContactCTA } from "@/features/home/components/contact-cta";
 import { DevelopmentApproach } from "@/features/home/components/development-approach";
 import { HeroSection } from "@/features/home/components/hero-section";
 import { SelectedProjects } from "@/features/home/components/selected-projects";
@@ -16,6 +17,8 @@ export default function Home() {
       <TechStack />
 
       <DevelopmentApproach />
+
+      <ContactCTA />
     </>
   );
 }
