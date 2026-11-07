@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 
 const navItems = [
   { label: "Work", href: "/projects" },
@@ -65,13 +66,24 @@ export default function SiteHeader() {
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "text-sm font-medium transition-colors duration-200",
+                  "relative text-sm font-medium transition-colors duration-200",
                   isActive
                     ? "text-foreground"
                     : "text-foreground-secondary hover:text-foreground",
                 )}
               >
                 {item.label}
+
+                {isActive && (
+                  <motion.span
+                    layoutId="active-nav-indicator"
+                    className="absolute inset-x-0 -bottom-px h-px bg-violet-400"
+                    transition={{
+                      duration: 0.2,
+                      ease: "easeOut",
+                    }}
+                  />
+                )}
               </Link>
             );
           })}
