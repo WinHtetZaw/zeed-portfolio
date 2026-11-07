@@ -83,7 +83,7 @@ async function ProjectContent({ params }: ProjectPageProps) {
   return (
     <>
       {/* Project Hero */}
-      <Section className="pb-12 sm:pb-16">
+      <Section className="pt-14 pb-12 sm:pb-16">
         <div className="flex flex-col gap-6">
           {/* Back Navigation */}
           <Link

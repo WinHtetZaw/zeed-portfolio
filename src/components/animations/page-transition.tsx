@@ -15,7 +15,7 @@ export function PageTransition({ children }: PageTransitionProps) {
       initial={shouldReduceMotion ? false : { opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
-        duration: shouldReduceMotion ? 0 : 3,
+        duration: shouldReduceMotion ? 0 : 0.3,
         ease: "easeOut",
       }}
     >

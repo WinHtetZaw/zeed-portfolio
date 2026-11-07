@@ -4,7 +4,7 @@ import Section from "@/components/ui/section";
 
 export default function ProjectsHeader() {
   return (
-    <Section className="pb-12 sm:pb-16">
+    <Section className="pt-14 pb-12 sm:pb-16">
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
           <span className="size-2 rounded-full bg-accent" />
