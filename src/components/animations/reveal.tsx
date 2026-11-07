@@ -27,9 +27,7 @@ export function Reveal({ children, className, delay = 0 }: RevealProps) {
         once: true,
         amount: 0.2,
       }}
-      transition={{
-        delay,
-      }}
+      transition={{ delay }}
     >
       {children}
     </motion.div>

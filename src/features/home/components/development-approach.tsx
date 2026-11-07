@@ -2,6 +2,7 @@ import { Code2, Search, Sparkles, type LucideIcon } from "lucide-react";
 
 import Section from "@/components/ui/section";
 import SectionHeading from "@/components/ui/section-heading";
+import { Reveal } from "@/components/animations/reveal";
 
 type ApproachStep = {
   number: string;
@@ -54,12 +55,14 @@ export function DevelopmentApproach() {
   return (
     <Section id="approach">
       <div className="flex flex-col gap-12">
-        <SectionHeading
-          eyebrow="HOW I WORK"
-          title="A thoughtful process, from idea to interface."
-          description="I approach every project with a focus on understanding the problem, building a solid solution, and continuously improving the result."
-          className="max-w-2xl"
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="HOW I WORK"
+            title="A thoughtful process, from idea to interface."
+            description="I approach every project with a focus on understanding the problem, building a solid solution, and continuously improving the result."
+            className="max-w-2xl"
+          />
+        </Reveal>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {approachSteps.map((step) => {

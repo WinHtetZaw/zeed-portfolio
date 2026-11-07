@@ -9,6 +9,7 @@ import {
 
 import Section from "@/components/ui/section";
 import SectionHeading from "@/components/ui/section-heading";
+import { Reveal } from "@/components/animations/reveal";
 
 const focusAreas = [
   {
@@ -43,10 +44,12 @@ export default function AboutPreview() {
       <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
         {/* Introduction */}
         <div className="flex flex-col items-start gap-6">
-          <SectionHeading
-            eyebrow="A little about me"
-            title="I enjoy turning ideas into useful digital experiences."
-          />
+          <Reveal>
+            <SectionHeading
+              eyebrow="A little about me"
+              title="I enjoy turning ideas into useful digital experiences."
+            />
+          </Reveal>
 
           <div className="space-y-4 text-sm leading-relaxed text-foreground-secondary sm:text-base">
             <p>

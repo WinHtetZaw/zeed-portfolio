@@ -11,7 +11,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface/50 transition-colors duration-200 hover:border-accent/40 hover:bg-surface">
+    <article className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 transition-colors duration-300 hover:border-violet-500/30 hover:bg-zinc-900">
       {/* Project preview */}
       <Link
         href={`/projects/${project.slug}`}
@@ -19,13 +19,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className="relative block aspect-video overflow-hidden bg-surface-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring"
       >
         {project.image.src ? (
-          <Image
-            src={project.image.src}
-            alt={project.image.alt}
-            fill
-            sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+          <div className="relative aspect-video overflow-hidden bg-zinc-800">
+            <Image
+              src={project.image.src}
+              alt={project.image.alt}
+              fill
+              sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none"
+            />
+          </div>
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="font-mono text-xs uppercase tracking-widest text-foreground-muted">

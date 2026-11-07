@@ -2,6 +2,7 @@ import ProjectCard from "@/features/projects/components/project-card";
 import { projects } from "@/features/projects/data/projects";
 
 import Section from "@/components/ui/section";
+import { AnimatedProjectCard } from "./animated-project-card";
 
 export default function ProjectsGrid() {
   if (projects.length === 0) {
@@ -23,8 +24,10 @@ export default function ProjectsGrid() {
   return (
     <Section className="pt-0">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
+        {projects.map((project, index) => (
+          <AnimatedProjectCard key={project.slug} index={index}>
+            <ProjectCard project={project} />
+          </AnimatedProjectCard>
         ))}
       </div>
     </Section>

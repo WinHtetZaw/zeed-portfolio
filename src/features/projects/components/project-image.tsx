@@ -12,7 +12,7 @@ export function ProjectImage(props: ProjectImageProps) {
 
   return (
     <div
-      className={`relative overflow-hidden rounded-2xl border border-border bg-surface-elevated ${
+      className={`group relative overflow-hidden rounded-2xl border border-border bg-surface-elevated ${
         aspectRatio === "video" ? "aspect-video" : "aspect-square"
       }`}
     >
@@ -22,7 +22,8 @@ export function ProjectImage(props: ProjectImageProps) {
         fill
         priority={priority}
         sizes="(max-width: 768px) 100vw, 1200px"
-        className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+        // className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+        className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] motion-reduce:transform-none"
       />
     </div>
   );

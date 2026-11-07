@@ -90,7 +90,7 @@ export const projects: Project[] = [
       "Stripe",
     ],
 
-    featured: true,
+    featured: false,
 
     image: {
       src: "/images/projects/noteai/cover.jpg",

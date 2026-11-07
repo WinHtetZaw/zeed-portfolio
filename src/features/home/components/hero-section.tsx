@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Section from "@/components/ui/section";
-import Button from "@/components/ui/button";
+import { motion, useReducedMotion } from "motion/react";
 
 export function HeroSection() {
+  const shouldReduceMotion = useReducedMotion();
   return (
     <Section className="relative isolate overflow-hidden !pt-28 md:!pt-40">
       {/* Background decoration */}
@@ -14,29 +17,49 @@ export function HeroSection() {
 
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         {/* Intro label */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-4 py-2">
+        <motion.div
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-surface/70 px-4 py-2"
+        >
           <span className="size-2 rounded-full bg-success" />
 
           <span className="font-mono text-xs tracking-wide text-foreground-secondary">
             FRONTEND DEVELOPER
           </span>
-        </div>
+        </motion.div>
 
         {/* Main heading */}
-        <h1 className="text-display font-semibold leading-[1.08] tracking-[-0.05em] text-foreground">
+        <motion.h1
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-display font-semibold leading-[1.08] tracking-[-0.05em] text-foreground"
+        >
           Building thoughtful{" "}
           <span className="text-accent">digital experiences.</span>
-        </h1>
+        </motion.h1>
 
         {/* Description */}
-        <p className="mt-8 max-w-2xl text-base leading-relaxed text-foreground-secondary md:text-lg">
+        <motion.p
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+          className="mt-8 max-w-2xl text-base leading-relaxed text-foreground-secondary md:text-lg"
+        >
           I'm Zeed, a frontend developer focused on React, Next.js, and building
           modern web applications with attention to detail, performance, and
           usability.
-        </p>
+        </motion.p>
 
         {/* CTA buttons */}
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+        <motion.div
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="mt-10 flex flex-col gap-3 sm:flex-row"
+        >
           <Link
             href="/projects"
             className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-accent px-6 text-base font-medium text-white transition-colors hover:bg-accent-hover"
@@ -52,7 +75,7 @@ export function HeroSection() {
             Get in touch
             <ArrowUpRight size={18} />
           </Link>
-        </div>
+        </motion.div>
 
         {/* Focus areas */}
         <div className="mt-20 flex flex-col items-center gap-4">

@@ -2,6 +2,7 @@ import { Code2, Database, Palette, Wrench, CreditCard } from "lucide-react";
 
 import Section from "@/components/ui/section";
 import SectionHeading from "@/components/ui/section-heading";
+import { Reveal } from "@/components/animations/reveal";
 
 const technologyGroups = [
   {
@@ -53,11 +54,13 @@ export default function TechStack() {
   return (
     <Section id="stack">
       <div className="flex flex-col gap-12">
-        <SectionHeading
-          eyebrow="My toolkit"
-          title="Technologies I work with."
-          description="The tools and technologies I use to build modern, maintainable, and user-focused web applications."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="My toolkit"
+            title="Technologies I work with."
+            description="The tools and technologies I use to build modern, maintainable, and user-focused web applications."
+          />
+        </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {technologyGroups.map((group) => {

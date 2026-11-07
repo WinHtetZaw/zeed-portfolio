@@ -20,7 +20,6 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
 
           <div>
             <h3 className="font-semibold text-foreground">{image.title}</h3>
-
             <p className="mt-1 text-sm text-foreground-secondary">
               {image.description}
             </p>
