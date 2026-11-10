@@ -14,7 +14,7 @@ export default function AboutCTA() {
         />
 
         <div className="relative mx-auto max-w-2xl">
-          <p className="mb-4 text-sm font-medium text-violet-400">
+          <p className="mb-4 text-sm font-medium text-accent-secondary">
             What's next?
           </p>
 
@@ -30,7 +30,7 @@ export default function AboutCTA() {
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-violet-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-violet-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
             >
               Get in touch
               <ArrowRight size={16} />

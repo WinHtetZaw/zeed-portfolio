@@ -52,7 +52,7 @@ export default function DevelopmentPhilosophy() {
               className="group rounded-2xl border border-border bg-surface/50 p-6 transition-colors hover:border-accent/40 sm:p-8"
             >
               <div className="flex items-center justify-between">
-                <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent">
+                <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent-secondary">
                   <Icon className="size-5" />
                 </div>
 

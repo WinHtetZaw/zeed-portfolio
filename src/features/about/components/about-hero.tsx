@@ -6,7 +6,7 @@ export default function AboutHero() {
   return (
     <Section className="pb-16 sm:pb-24">
       <div className="max-w-4xl">
-        <p className="mb-6 font-mono text-xs uppercase tracking-[0.2em] text-accent">
+        <p className="mb-6 font-mono text-xs uppercase tracking-[0.2em] text-accent-secondary">
           About me
         </p>
 

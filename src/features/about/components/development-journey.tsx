@@ -48,7 +48,7 @@ export default function DevelopmentJourney() {
               className="relative grid gap-5 rounded-2xl border border-border bg-surface/50 p-6 sm:grid-cols-[auto_1fr] sm:p-8"
             >
               <div className="flex items-center gap-4 sm:block">
-                <div className="flex size-12 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent">
+                <div className="flex size-12 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent-secondary">
                   <Icon className="size-5" />
                 </div>
 

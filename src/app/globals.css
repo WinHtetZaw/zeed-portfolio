@@ -24,13 +24,10 @@
 
   /* Accent */
   /* --accent: #8b5cf6; */
-  /* --accent: var(--color-sky-600); */
-  --accent: #503c3c;
+  --accent: #7e6363;
   /* --accent-hover: #7c3aed; */
-  /* --accent-hover: var(--color-sky-500); */
-  --accent-hover: #3e3232;
+  --accent-hover: #503c3c;
   /* --accent-secondary: #818cf8; */
-  /* --accent-secondary: var(--color-sky-300); */
   --accent-secondary: #a87c7c;
 
   /* Status */
@@ -39,7 +36,7 @@
   /* Borders and focus */
   --border: rgba(255, 255, 255, 0.1);
   --border-subtle: rgba(255, 255, 255, 0.06);
-  --ring: #8b5cf6;
+  --ring: #7e6363;
 
   /* Radius */
   --radius: 0.75rem;

@@ -29,10 +29,10 @@ export function HeroSection() {
           initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-display font-semibold leading-[1.08] tracking-[-0.05em] text-foreground"
+          className="text-display font-semibold leading-[1.08] tracking-tighter text-foreground"
         >
           Building thoughtful{" "}
-          <span className="text-accent">digital experiences.</span>
+          <span className="text-accent-secondary">digital experiences.</span>
         </motion.h1>
 
         {/* Description */}

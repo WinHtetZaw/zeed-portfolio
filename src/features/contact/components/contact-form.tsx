@@ -15,7 +15,7 @@ import { env } from "@/env/client";
 import Button from "@/components/ui/button";
 
 const inputClassName =
-  "w-full rounded-lg border border-white/10 bg-zinc-900/70 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20";
+  "w-full rounded-lg border border-white/10 bg-zinc-900/70 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-accent focus:ring-2 focus:ring-accent/20 ring-offset-2 ring-offset-zinc-950/50";
 
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -125,7 +125,7 @@ export function ContactForm() {
           />
 
           {errors.name && (
-            <p id="name-error" className="mt-2 text-sm text-red-400">
+            <p id="name-error" className="mt-2 text-sm text-rose-400">
               {errors.name.message}
             </p>
           )}

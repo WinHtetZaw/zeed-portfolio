@@ -25,7 +25,7 @@ export function ContactCTA() {
           <div className="max-w-2xl space-y-4">
             <h2 className="text-(length:--text-heading) font-semibold tracking-tight">
               Have an idea or opportunity?
-              <span className="text-accent"> Let's talk.</span>
+              <span className="text-accent-secondary"> Let's talk.</span>
             </h2>
 
             <p className="max-w-xl text-base leading-relaxed text-foreground-secondary">
@@ -35,7 +35,7 @@ export function ContactCTA() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="w-full flex flex-col gap-4 sm:flex-row sm:items-center">
             <Link
               href="/contact"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-accent px-6 text-sm font-medium text-white transition-colors duration-200 hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
@@ -46,7 +46,7 @@ export function ContactCTA() {
 
             <a
               href={socialLinks.email.href}
-              className="inline-flex items-center gap-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground"
+              className="inline-flex max-sm:justify-center items-center gap-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground"
             >
               <Mail size={16} />
               {socialLinks.email.href.split(":")[1]}

@@ -39,6 +39,14 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "WinHtetZaw.dev",
     title: "WinHtetZaw | Fullstack Developer",
+    // images: [
+    //   {
+    //     url: "opengraph-image.png",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "WinHtetZaw - Fullstack Developer",
+    //   },
+    // ],
     description:
       "Explore my projects, development journey, and experience building modern web applications.",
   },
