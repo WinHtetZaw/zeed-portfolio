@@ -8,7 +8,7 @@ export default function ProjectsHeader() {
       <div className="flex flex-col gap-6">
         <div className="flex items-center gap-2">
           <span className="size-2 rounded-full bg-accent" />
-          <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">
+          <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-secondary">
             My work
           </span>
         </div>

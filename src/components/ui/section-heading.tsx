@@ -20,7 +20,7 @@ export default function SectionHeading(props: SectionHeadingProps) {
       )}
     >
       {eyebrow && (
-        <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">
+        <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-secondary">
           {eyebrow}
         </span>
       )}

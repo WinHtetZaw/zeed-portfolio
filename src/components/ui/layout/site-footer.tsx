@@ -11,6 +11,8 @@ const navigationLinks = [
 ];
 
 export default function SiteFooter() {
+  const links = Object.values(socialLinks);
+
   return (
     <footer className="border-t border-border-subtle mt-auto">
       <div className="container-layout py-12 md:py-16">
@@ -57,7 +59,7 @@ export default function SiteFooter() {
             <h3 className="text-sm font-semibold text-foreground">Connect</h3>
 
             <div className="flex flex-col items-start gap-3">
-              {socialLinks.map((link) => (
+              {links.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}

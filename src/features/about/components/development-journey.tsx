@@ -45,14 +45,14 @@ export default function DevelopmentJourney() {
           return (
             <article
               key={item.number}
-              className="relative grid gap-5 rounded-2xl border border-border bg-surface/50 p-6 sm:grid-cols-[64px_1fr] sm:p-8"
+              className="relative grid gap-5 rounded-2xl border border-border bg-surface/50 p-6 sm:grid-cols-[auto_1fr] sm:p-8"
             >
               <div className="flex items-center gap-4 sm:block">
                 <div className="flex size-12 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent">
                   <Icon className="size-5" />
                 </div>
 
-                <span className="font-mono text-xs text-foreground-muted sm:mt-4 sm:block">
+                <span className="font-mono sm:text-center text-xs text-foreground-muted sm:mt-4 sm:block">
                   {item.number}
                 </span>
               </div>

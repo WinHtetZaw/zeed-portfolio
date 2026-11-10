@@ -160,7 +160,7 @@ async function ProjectContent({ params }: ProjectPageProps) {
                 href={project.links.liveDemo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-violet-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-violet-600"
+                className="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
               >
                 Live demo
                 <ExternalLink size={14} />
@@ -169,79 +169,6 @@ async function ProjectContent({ params }: ProjectPageProps) {
           </div>
         </div>
       </Section>
-
-      {/* <Section className="pt-0">
-        <div className="space-y-12">
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-surface-elevated">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-mono text-sm uppercase tracking-widest text-foreground-muted">
-                Project screenshots coming soon
-              </span>
-            </div>
-          </div>
-
-          <div className="grid gap-10 md:grid-cols-[1fr_280px]">
-            <div className="space-y-4">
-              <h2 className="text-2xl font-semibold tracking-tight">
-                Project overview
-              </h2>
-
-              <p className="leading-relaxed text-foreground-secondary">
-                {project.longDescription}
-              </p>
-            </div>
-
-            <aside className="h-fit rounded-xl border border-border bg-surface/50 p-5">
-              <h2 className="mb-4 text-sm font-semibold">
-                Project information
-              </h2>
-
-              <dl className="space-y-4 text-sm">
-                <div>
-                  <dt className="text-foreground-muted">Category</dt>
-                  <dd className="mt-1 text-foreground">{project.category}</dd>
-                </div>
-
-                <div>
-                  <dt className="text-foreground-muted">Status</dt>
-                  <dd className="mt-1 text-foreground">{project.status}</dd>
-                </div>
-
-                <div>
-                  <dt className="text-foreground-muted">Technologies</dt>
-                  <dd className="mt-2 flex flex-wrap gap-2">
-                    {project.technologies.map((technology) => (
-                      <span
-                        key={technology}
-                        className="rounded-md bg-surface-elevated px-2 py-1 text-xs text-foreground-secondary"
-                      >
-                        {technology}
-                      </span>
-                    ))}
-                  </dd>
-                </div>
-              </dl>
-            </aside>
-          </div>
-
-          <div className="space-y-5">
-            <h2 className="text-2xl font-semibold tracking-tight">
-              Key features
-            </h2>
-
-            <ul className="grid gap-3 sm:grid-cols-2">
-              {project.highlights.map((highlight) => (
-                <li
-                  key={highlight}
-                  className="rounded-xl border border-border bg-surface/50 p-4 text-sm text-foreground-secondary"
-                >
-                  {highlight}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </Section> */}
 
       {/* Project Preview */}
       <Section className="pt-0 pb-12 sm:pb-16">

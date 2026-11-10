@@ -117,7 +117,7 @@ export default function SiteHeader() {
                 {isActive && (
                   <motion.span
                     layoutId="active-nav-indicator"
-                    className="absolute inset-x-0 -bottom-px h-px bg-violet-400"
+                    className="absolute inset-x-0 -bottom-px h-px bg-accent"
                     transition={{
                       duration: 0.2,
                       ease: "easeOut",

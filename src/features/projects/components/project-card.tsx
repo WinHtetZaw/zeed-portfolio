@@ -11,7 +11,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 transition-colors duration-300 hover:border-violet-500/30 hover:bg-zinc-900">
+    <article className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 transition-colors duration-300 hover:border-accent/30 hover:bg-zinc-900">
       {/* Project preview */}
       <Link
         href={`/projects/${project.slug}`}

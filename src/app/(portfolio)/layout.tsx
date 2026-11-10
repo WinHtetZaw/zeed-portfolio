@@ -17,7 +17,12 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
       </a>
       <SiteHeader />
 
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className="relative flex-1">
+        {/* Background decoration */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-125 max-w-125 w-full -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]"
+        />
         {children}
       </main>
 

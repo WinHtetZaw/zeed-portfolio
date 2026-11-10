@@ -16,7 +16,7 @@ export default function ProjectNavigation({
   return (
     <nav
       aria-label="Project navigation"
-      className="grid gap-4 border-t border-border pt-8 sm:grid-cols-2"
+      className="grid gap-4 pt-8 sm:grid-cols-2"
     >
       {previousProject ? (
         <Link
@@ -46,7 +46,7 @@ export default function ProjectNavigation({
             <ArrowRight className="size-3.5" />
           </span>
 
-          <span className="mt-3 block font-semibold text-foreground transition-colors group-hover:text-accent">
+          <span className="mt-3 text-right block font-semibold text-foreground transition-colors group-hover:text-accent">
             {nextProject.title}
           </span>
         </Link>

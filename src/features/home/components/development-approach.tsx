@@ -78,7 +78,7 @@ export function DevelopmentApproach() {
                     / {step.number}
                   </span>
 
-                  <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent transition-colors duration-200 group-hover:border-accent/30">
+                  <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-surface-elevated text-accent-secondary transition-colors duration-200 group-hover:border-accent/30">
                     <Icon size={20} strokeWidth={1.8} />
                   </div>
                 </div>

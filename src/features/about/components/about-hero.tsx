@@ -35,7 +35,7 @@ export default function AboutHero() {
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 rounded-lg bg-violet-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-violet-600"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
           >
             Explore my work
             <ArrowRight className="size-4" />

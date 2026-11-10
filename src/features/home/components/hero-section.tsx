@@ -8,13 +8,7 @@ import { motion, useReducedMotion } from "motion/react";
 export function HeroSection() {
   const shouldReduceMotion = useReducedMotion();
   return (
-    <Section className="relative isolate overflow-hidden !pt-28 md:!pt-40">
-      {/* Background decoration */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]"
-      />
-
+    <Section className=" isolate overflow-hidden pt-28! md:pt-40!">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         {/* Intro label */}
         <motion.div

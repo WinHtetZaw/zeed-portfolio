@@ -23,10 +23,15 @@
   --foreground-muted: #71717a;
 
   /* Accent */
-  --accent: #8b5cf6;
-  /* --accent: var(--color-cyan-600); */
-  --accent-hover: #7c3aed;
-  --accent-secondary: #818cf8;
+  /* --accent: #8b5cf6; */
+  /* --accent: var(--color-sky-600); */
+  --accent: #503c3c;
+  /* --accent-hover: #7c3aed; */
+  /* --accent-hover: var(--color-sky-500); */
+  --accent-hover: #3e3232;
+  /* --accent-secondary: #818cf8; */
+  /* --accent-secondary: var(--color-sky-300); */
+  --accent-secondary: #a87c7c;
 
   /* Status */
   --success: #22c55e;

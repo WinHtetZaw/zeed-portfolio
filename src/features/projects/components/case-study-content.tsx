@@ -118,7 +118,7 @@ export function CaseStudyContent({ caseStudy }: CaseStudyContentProps) {
               </div>
 
               <div>
-                <p className="mb-2 font-mono text-xs uppercase tracking-wider text-accent">
+                <p className="mb-2 font-mono text-xs uppercase tracking-wider text-accent-secondary">
                   Approach
                 </p>
 

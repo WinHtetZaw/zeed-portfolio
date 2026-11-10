@@ -86,9 +86,9 @@ export default function AboutPreview() {
             return (
               <article
                 key={area.title}
-                className="rounded-xl border border-border bg-surface/50 p-5 transition-colors duration-200 hover:border-white/15"
+                className="rounded-xl border border-border bg-surface/50 p-5 transition-colors duration-200 hover:border-white/15 hover:bg-zinc-900"
               >
-                <div className="mb-5 flex size-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                <div className="mb-5 flex size-10 items-center justify-center rounded-lg bg-accent/20 text-accent-secondary">
                   <Icon size={20} />
                 </div>
 

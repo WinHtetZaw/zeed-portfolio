@@ -12,6 +12,7 @@ import {
 } from "@/features/contact/schemas/contact-schema";
 import { sendContactMessage } from "../server/actions/send-contact-message";
 import { env } from "@/env/client";
+import Button from "@/components/ui/button";
 
 const inputClassName =
   "w-full rounded-lg border border-white/10 bg-zinc-900/70 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20";
@@ -226,6 +227,7 @@ export function ContactForm() {
       <input type="hidden" {...register("turnstileToken")} />
 
       <Turnstile
+        className=""
         key={turnstileKey}
         siteKey={env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
         onSuccess={(token) => {
@@ -248,10 +250,10 @@ export function ContactForm() {
         }}
       />
 
-      <button
+      <Button
         type="submit"
         disabled={isPending || !turnstileToken}
-        className="inline-flex ml-auto w-full items-center justify-center gap-2 rounded-lg bg-violet-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-violet-400 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="inline-flex sm:mr-auto w-full items-center justify-center gap-2 px-5 py-3 text-sm font-medium sm:w-auto"
       >
         {isPending ? (
           <>
@@ -264,7 +266,7 @@ export function ContactForm() {
             <Send className="size-4" />
           </>
         )}
-      </button>
+      </Button>
     </form>
   );
 }

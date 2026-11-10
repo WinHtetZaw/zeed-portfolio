@@ -1,8 +1,16 @@
-import { Code2, Database, Palette, Wrench, CreditCard } from "lucide-react";
+import {
+  Code2,
+  Database,
+  Palette,
+  Wrench,
+  CreditCard,
+  ArrowBigDown,
+} from "lucide-react";
 
 import Section from "@/components/ui/section";
 import SectionHeading from "@/components/ui/section-heading";
 import { Reveal } from "@/components/animations/reveal";
+import { AnimatedCard } from "@/components/ui/animated-card";
 
 const technologyGroups = [
   {
@@ -63,15 +71,15 @@ export default function TechStack() {
         </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {technologyGroups.map((group) => {
+          {technologyGroups.map((group, index) => {
             const Icon = group.icon;
 
             return (
               <article
                 key={group.title}
-                className="rounded-xl border border-border bg-surface/50 p-6 transition-colors duration-200 hover:border-white/15"
+                className="rounded-xl border border-border bg-surface/50 p-6 transition-colors duration-200 hover:border-white/15 hover:bg-zinc-900"
               >
-                <div className="mb-5 flex size-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                <div className="mb-5 flex size-10 items-center justify-center rounded-lg bg-accent/20 text-accent-secondary">
                   <Icon size={20} />
                 </div>
 

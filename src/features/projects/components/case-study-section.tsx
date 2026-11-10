@@ -13,7 +13,7 @@ export default function CaseStudySection(props: CaseStudySectionProps) {
   return (
     <section id={id} className="scroll-mt-38 space-y-6">
       <div className="max-w-2xl space-y-3">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent-secondary">
           Case study
         </p>
 

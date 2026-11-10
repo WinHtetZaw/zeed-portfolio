@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight, Mail } from "lucide-react";
 
 import Section from "@/components/ui/section";
+import { socialLinks } from "@/utils/data/social-links";
 
 export function ContactCTA() {
   return (
@@ -44,11 +45,11 @@ export function ContactCTA() {
             </Link>
 
             <a
-              href="mailto:your-email@example.com"
+              href={socialLinks.email.href}
               className="inline-flex items-center gap-2 text-sm font-medium text-foreground-secondary transition-colors hover:text-foreground"
             >
               <Mail size={16} />
-              your-email@example.com
+              {socialLinks.email.href.split(":")[1]}
             </a>
           </div>
         </div>
