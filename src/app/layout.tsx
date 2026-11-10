@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { env } from "@/env/client";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://your-domain.com";
+const siteUrl = env.NEXT_PUBLIC_SITE_URL;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
@@ -58,14 +59,14 @@ export const metadata: Metadata = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Zeed",
-  url: "https://your-domain.com",
-  jobTitle: "Frontend Developer",
+  name: "Win Htet Zaw",
+  url: siteUrl,
+  jobTitle: "Full Stack Developer",
   knowsAbout: [
     "React",
     "Next.js",
     "TypeScript",
-    "Frontend Development",
+    "Full Stack Development",
     "Web Development",
   ],
 };

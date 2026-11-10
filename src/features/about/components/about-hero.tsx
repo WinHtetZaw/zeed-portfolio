@@ -17,8 +17,8 @@ export default function AboutHero() {
 
         <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-foreground-secondary">
           <p>
-            I'm Zeed, a frontend developer focused on React, Next.js, and
-            building modern web applications.
+            I'm Win Htet Zaw, a full stack developer focused on React, Next.js,
+            and building modern web applications.
           </p>
 
           <p>

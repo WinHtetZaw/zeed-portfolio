@@ -56,9 +56,8 @@ export const projects: Project[] = [
     },
 
     links: {
-      // Add your actual URLs when available.
-      liveDemo: "https://your-domain.com",
-      github: "https://github.com/your-username/noteai",
+      liveDemo: "https://w-note-ai.vercel.app",
+      github: "https://github.com/WinHtetZaw/W-Note",
     },
 
     highlights: [
@@ -98,9 +97,8 @@ export const projects: Project[] = [
     },
 
     links: {
-      // Add your actual URLs when available.
-      liveDemo: "https://your-domain.com",
-      github: "https://github.com/your-username/noteai",
+      liveDemo: "https://w-note-ai.vercel.app",
+      github: "https://github.com/WinHtetZaw/W-Note",
     },
 
     highlights: [

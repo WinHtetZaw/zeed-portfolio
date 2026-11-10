@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 
 import { projects } from "@/features/projects/data/projects";
+import { env } from "./env/client";
 
-const siteUrl = "https://your-domain.com";
+const siteUrl = env.NEXT_PUBLIC_SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/projects", "/about", "/contact"];

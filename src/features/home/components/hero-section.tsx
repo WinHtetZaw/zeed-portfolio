@@ -26,7 +26,7 @@ export function HeroSection() {
           <span className="size-2 rounded-full bg-success" />
 
           <span className="font-mono text-xs tracking-wide text-foreground-secondary">
-            FRONTEND DEVELOPER
+            FULL STACK DEVELOPER
           </span>
         </motion.div>
 
@@ -48,9 +48,9 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.35 }}
           className="mt-8 max-w-2xl text-base leading-relaxed text-foreground-secondary md:text-lg"
         >
-          I'm Zeed, a frontend developer focused on React, Next.js, and building
-          modern web applications with attention to detail, performance, and
-          usability.
+          I'm WIn Htet Zaw, a full stack developer focused on React, Next.js,
+          and building modern web applications with attention to detail,
+          performance, and usability.
         </motion.p>
 
         {/* CTA buttons */}
@@ -84,7 +84,7 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-x-3 gap-y-2 text-sm text-foreground-secondary">
-            <span>Modern frontend development</span>
+            <span>Modern full stack development</span>
             <span className="text-accent">/</span>
             <span>User-focused interfaces</span>
             <span className="text-accent">/</span>

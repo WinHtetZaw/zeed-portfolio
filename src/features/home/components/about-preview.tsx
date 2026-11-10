@@ -14,7 +14,7 @@ import { Reveal } from "@/components/animations/reveal";
 const focusAreas = [
   {
     icon: Code2,
-    title: "Frontend Development",
+    title: "Full stack Development",
     description:
       "Building modern interfaces with React, Next.js, and TypeScript.",
   },
@@ -53,7 +53,7 @@ export default function AboutPreview() {
 
           <div className="space-y-4 text-sm leading-relaxed text-foreground-secondary sm:text-base">
             <p>
-              I'm a frontend developer passionate about building modern web
+              I'm a full stack developer passionate about building modern web
               applications with React, Next.js, and TypeScript.
             </p>
 

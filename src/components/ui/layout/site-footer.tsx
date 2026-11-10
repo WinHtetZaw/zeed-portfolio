@@ -1,23 +1,13 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { CURRENT_YEAR } from "@/utils/constants";
+import { socialLinks } from "@/utils/data/social-links";
 
 const navigationLinks = [
   { label: "Home", href: "/" },
   { label: "Work", href: "/projects" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-];
-
-const socialLinks = [
-  {
-    label: "GitHub",
-    href: "https://github.com/",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/",
-  },
 ];
 
 export default function SiteFooter() {
@@ -31,11 +21,11 @@ export default function SiteFooter() {
               href="/"
               className="w-fit text-xl font-semibold tracking-tight text-foreground"
             >
-              Zeed<span className="text-accent">.</span>dev
+              WinHtetZaw<span className="text-accent">.</span>dev
             </Link>
 
             <p className="max-w-sm text-sm leading-relaxed text-foreground-secondary">
-              Frontend developer focused on building modern, thoughtful, and
+              Full stack developer focused on building modern, thoughtful, and
               user-friendly web experiences.
             </p>
           </div>
@@ -82,23 +72,13 @@ export default function SiteFooter() {
             </div>
           </div>
         </div>
-
-        {/* Bottom Bar */}
-        {/* <div className="mt-12 flex flex-col gap-3 border-t border-border-subtle pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-foreground-muted">
-            © {CURRENT_YEAR} Zeed.dev. All rights reserved.
-          </p>
-
-          <p className="text-xs text-foreground-muted">
-            Designed and built with care.
-          </p>
-        </div> */}
       </div>
 
+      {/* Bottom Bar */}
       <div className="border-t border-border-subtle">
         <div className="container-layout flex flex-col gap-3 py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-foreground-muted">
-            © {CURRENT_YEAR} Zeed.dev. All rights reserved.
+            © {CURRENT_YEAR} WinHtetZaw.dev. All rights reserved.
           </p>
 
           <p className="text-xs text-foreground-muted">
