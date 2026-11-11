@@ -51,7 +51,7 @@ export const projects: Project[] = [
     featured: true,
 
     image: {
-      src: "/images/projects/noteai/cover.jpg",
+      src: "/images/projects/noteai/cover.png",
       alt: "NoteAI application dashboard",
     },
 
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     featured: false,
 
     image: {
-      src: "/images/projects/noteai/cover.jpg",
+      src: "/images/projects/noteai/cover.png",
       alt: "NoteAI application dashboard",
     },
 
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     featured: false,
 
     image: {
-      src: "/images/projects/noteai/cover.jpg",
+      src: "/images/projects/noteai/cover.png",
       alt: "NoteAI application dashboard",
     },
 

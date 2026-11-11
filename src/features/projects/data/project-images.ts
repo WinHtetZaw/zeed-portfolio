@@ -14,7 +14,7 @@ export const projectImages = {
       description: "The note editing experience.",
     },
     {
-      src: "/images/projects/noteai/workspace.jpg",
+      src: "/images/projects/noteai/workspace.png",
       alt: "NoteAI workspace management interface",
       title: "Workspace management",
       description: "Workspace and member management interface.",
