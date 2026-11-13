@@ -3,10 +3,10 @@ import * as z from "zod";
 
 export const env = createEnv({
   server: {
-    RESEND_API_KEY: z.url(),
+    RESEND_API_KEY: z.string().min(1),
     CONTACT_EMAIL: z.string().min(1),
     RESEND_FROM_EMAIL: z.string().min(1),
-    UPSTASH_REDIS_REST_URL: z.string().min(1),
+    UPSTASH_REDIS_REST_URL: z.url(),
     UPSTASH_REDIS_REST_TOKEN: z.string().min(1),
     TURNSTILE_SECRET_KEY: z.string().min(1),
     TURNSTILE_EXPECTED_HOSTNAME: z.string().min(1),
